@@ -1,0 +1,140 @@
+.navbar-header {
+    background-color: #182232; /* Navigation background bar color */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.85rem 2.5rem;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Brand Logo */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.brand-icon {
+    color: #5bb362; /* Green accent color for the bar chart icon */
+    display: flex;
+    align-items: center;
+}
+
+.brand-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+/* Central Nav Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #94a3b8; /* Muted gray for inactive links */
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.nav-link.active {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Right User Menu Area */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+/* Notification Bell */
+.notification-btn {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+}
+
+.notification-btn:hover {
+    color: #ffffff;
+}
+
+.notification-dot {
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    width: 6px;
+    height: 6px;
+    background-color: #e07a5f; /* Orange dot */
+    border-radius: 50%;
+}
+
+/* Profile Badge */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #d8c29d; /* Warm beige avatar background */
+    color: #2b2318;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.user-role {
+    font-size: 0.78rem;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+.dropdown-arrow {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin-left: 0.25rem;
+}

@@ -3,13 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Focus  Pocus</title>
+    <title>Focus Pocus</title>
+    <!-- Google Fonts for crisp typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for the notification bell icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            
+    <header class="navbar-header">
+        <nav class="navbar">
+            <!-- Brand / Logo Section -->
+            <a href="#" class="brand">
+                <span class="brand-icon">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                        <rect x="3" y="10" width="4" height="11" rx="1.5" />
+                        <rect x="10" y="5" width="4" height="16" rx="1.5" />
+                        <rect x="17" y="2" width="4" height="19" rx="1.5" />
+                    </svg>
+                </span>
+                <span class="brand-name">FocusCraft</span>
+            </a>
+
+            <!-- Central Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active">Techniques Directory</a></li>
+                <li><a href="#" class="nav-link">My Workspace</a></li>
+                <li><a href="#" class="nav-link">Analytics</a></li>
+                <li><a href="#" class="nav-link">Settings</a></li>
+            </ul>
+
+            <!-- Right Utilities / User Profile Section -->
+            <div class="user-menu">
+                <!-- Notification Bell with Dot -->
+                <button class="notification-btn" aria-label="Notifications">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification-dot"></span>
+                </button>
+
+                <!-- User Profile Badge -->
+                <div class="user-profile">
+                    <div class="avatar">FM</div>
+                    <div class="user-info">
+                        <span class="user-name">Frixie Marban</span>
+                        <span class="user-role">Student</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                </div>
+            </div>
         </nav>
     </header>
+    <!-- Hero Section -->
+    <main class="hero-section">
+        <div class="hero-container">
+            <!-- Left Text Content -->
+            <div class="hero-content">
+                <span class="hero-badge">EVIDENCE-BASED LEARNING</span>
+                <h1 class="hero-title">
+                    Find your way to better learning.
+                </h1>
+                <p class="hero-description">
+                    Explore proven study methods designed to help you focus deeper, remember longer, and learn with purpose.
+                </p>
+            </div>
+
+            <!-- Right Focus Card -->
+            <div class="focus-card">
+                <div class="focus-icon-wrapper">
+                    <i class="fa-solid fa-sparkles"></i>
+                </div>
+                <div class="focus-card-text">
+                    <span class="focus-card-label">TODAY'S FOCUS</span>
+                    <h3 class="focus-card-title">Small steps, repeated.</h3>
+                    <p class="focus-card-subtitle">Your consistency is your superpower.</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
