@@ -1,0 +1,226 @@
+/* Directory Section Base */
+.directory-section {
+    background-color: #f5f6f2;
+    padding: 3rem 2.5rem 5rem 2.5rem;
+}
+
+.directory-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Header & Counter */
+.directory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+
+.section-badge {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #4b6b52;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.directory-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.count-badge {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.count-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4b6b52;
+}
+
+.count-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #6b7280;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: transparent;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6b7280;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+    color: #111827;
+}
+
+.filter-btn.active {
+    background-color: #1c2536;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Grid Layout */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+}
+
+@media (max-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Individual Card */
+.card {
+    background-color: #fcfcf9;
+    border: 1px solid #e9ebe3;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 380px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Pastel Icon Containers */
+.icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.icon-peach { background-color: #fcedea; color: #d97706; }
+.icon-blue  { background-color: #eaf1fa; color: #2563eb; }
+.icon-purple{ background-color: #f1eafe; color: #7c3aed; }
+.icon-yellow{ background-color: #fef4e2; color: #d97706; }
+.icon-teal  { background-color: #e3f5f3; color: #0d9488; }
+.icon-pink  { background-color: #fce8f0; color: #db2777; }
+
+.card-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #d1d5db;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.6rem;
+}
+
+.card-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #6b7280;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.card-divider {
+    height: 1px;
+    background-color: #e5e7eb;
+    margin-bottom: 1.5rem;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #9ca3af;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+}
+
+.footer-value {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+}
+
+/* Start Workspace Button */
+.start-btn {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 0.8rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1f2937;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.start-btn:hover {
+    background-color: #1c2536;
+    color: #ffffff;
+    border-color: #1c2536;
+}

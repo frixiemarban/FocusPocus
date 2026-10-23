@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <script src="js/filter.js" defer></script>
 </head>
 <body>
     <header class="navbar-header">
@@ -74,7 +74,7 @@
             <!-- Right Focus Card -->
             <div class="focus-card">
                 <div class="focus-icon-wrapper">
-                    <i class="fa-solid fa-sparkles"></i>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
                 </div>
                 <div class="focus-card-text">
                     <span class="focus-card-label">TODAY'S FOCUS</span>
@@ -84,5 +84,162 @@
             </div>
         </div>
     </main>
+    <!-- Techniques Section -->
+    <section class="directory-section">
+        <div class="directory-container">
+        
+            <!-- Header & Counter -->
+            <div class="directory-header">
+                <div class="header-text">
+                    <span class="section-badge">STUDY TOOLKIT</span>
+                    <h2 class="directory-title">Techniques Directory</h2>
+                </div>
+                <div class="count-badge">
+                    <span class="count-number">6</span>
+                    <span class="count-label">proven methods</span>
+                </div>
+            </div>
+
+            <!-- Filter Category Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-category="all">All Methods</button>
+                <button class="filter-btn" data-category="memorization">For Memorization</button>
+                <button class="filter-btn" data-category="understanding">For Deep Understanding</button>
+                <button class="filter-btn" data-category="exam">For Exam Revision</button>
+                <button class="filter-btn" data-category="speed">For Speed</button>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="cards-grid">
+
+                <!-- Card 01: Pomodoro Technique -->
+                <div class="card" data-category="speed">
+                    <div class="card-header">
+                        <div class="icon-box icon-peach">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <span class="card-number">01</span>
+                    </div>
+                    <h3 class="card-title">Pomodoro Technique</h3>
+                    <p class="card-desc">25-min focus / 5-min break cycles.</p>
+                    <div class="card-divider"></div>
+                    <div class="card-footer">
+                        <span class="footer-label">BEST USED FOR</span>
+                        <p class="footer-value">Beating Procrastination & Endurance</p>
+                        <button class="start-btn">
+                            <span>Start Workspace</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 02: Feynman Technique (Fixed Icon) -->
+                <div class="card" data-category="understanding">
+                    <div class="card-header">
+                        <div class="icon-box icon-blue">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <span class="card-number">02</span>
+                    </div>
+                    <h3 class="card-title">Feynman Technique</h3>
+                    <p class="card-desc">Explain complex concepts in simple terms.</p>
+                    <div class="card-divider"></div>
+                    <div class="card-footer">
+                        <span class="footer-label">BEST USED FOR</span>
+                        <p class="footer-value">Deep Conceptual Understanding</p>
+                        <button class="start-btn">
+                            <span>Start Workspace</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 03: Active Recall -->
+                <div class="card" data-category="memorization exam">
+                    <div class="card-header">
+                        <div class="icon-box icon-purple">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <span class="card-number">03</span>
+                    </div>
+                    <h3 class="card-title">Active Recall</h3>
+                    <p class="card-desc">Self-testing without looking at notes.</p>
+                    <div class="card-divider"></div>
+                    <div class="card-footer">
+                        <span class="footer-label">BEST USED FOR</span>
+                        <p class="footer-value">Long-term Memory Retention</p>
+                        <button class="start-btn">
+                            <span>Start Workspace</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 04: Leitner System -->
+                <div class="card" data-category="memorization">
+                    <div class="card-header">
+                        <div class="icon-box icon-yellow">
+                            <i class="fa-solid fa-box-archive"></i>
+                        </div>
+                        <span class="card-number">04</span>
+                    </div>
+                    <h3 class="card-title">Leitner System</h3>
+                    <p class="card-desc">Flashcard repetition using spaced intervals.</p>
+                    <div class="card-divider"></div>
+                    <div class="card-footer">
+                        <span class="footer-label">BEST USED FOR</span>
+                        <p class="footer-value">Vocabulary & Fact Memorization</p>
+                        <button class="start-btn">
+                            <span>Start Workspace</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 05: SQ3R Method (Fixed Class) -->
+                <div class="card" data-category="understanding">
+                    <div class="card-header">
+                        <div class="icon-box icon-teal">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <span class="card-number">05</span>
+                    </div>
+                    <h3 class="card-title">SQ3R Method</h3>
+                    <p class="card-desc">Survey, Question, Read, Recite, Review.</p>
+                    <div class="card-divider"></div>
+                    <div class="card-footer">
+                        <span class="footer-label">BEST USED FOR</span>
+                        <p class="footer-value">Reading Heavy Textbooks & Literature</p>
+                        <button class="start-btn">
+                            <span>Start Workspace</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 06: Blurting Method (Fixed Icon) -->
+                <div class="card" data-category="exam speed">
+                    <div class="card-header">
+                        <div class="icon-box icon-pink">
+                            <i class="fa-solid fa-pen"></i>
+                        </div>
+                        <span class="card-number">06</span>
+                    </div>
+                    <h3 class="card-title">Blurting Method</h3>
+                    <p class="card-desc">Write everything you remember from memory, then check gaps.</p>
+                    <div class="card-divider"></div>
+                    <div class="card-footer">
+                        <span class="footer-label">BEST USED FOR</span>
+                        <p class="footer-value">Quick Exam Prep & Knowledge Audits</p>
+                        <button class="start-btn">
+                            <span>Start Workspace</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </body>
 </html>
