@@ -217,6 +217,7 @@
     color: #1f2937;
     cursor: pointer;
     transition: all 0.2s ease;
+    text-decoration: none;
 }
 
 .start-btn:hover {

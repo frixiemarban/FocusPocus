@@ -1,6 +1,7 @@
 @import 'nav.css';
 @import 'hero-section.css';
 @import 'techniques-section.css';
+@import 'pomodoro-workspace';
 
 /* Reset and Base Styles */
 * {
