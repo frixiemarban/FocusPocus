@@ -511,6 +511,17 @@ input:checked + .slider:before {
     color: #ffffff;
 }
 
+.task-item.completed .checkbox-custom::after {
+    content: "";
+    width: 5px;
+    height: 10px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: block;
+    margin-bottom: 2px;
+}
+
 .task-item.completed .task-text {
     color: #9ca3af;
     text-decoration: line-title;
